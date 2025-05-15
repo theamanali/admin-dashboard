@@ -216,7 +216,7 @@ div > h3 {
     background: white;
     border-left: 8px solid #622E81;
     border-radius: 8px;
-    padding: 24px 12px;
+    padding: 24px 24px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     display: flex;
@@ -249,4 +249,15 @@ div > h3 {
 .announcements-wrapper {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+}
+
+.announcements-container {
+    background-color: white;
+    height: 95%;
+    padding: 24px 24px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
 }
