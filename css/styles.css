@@ -1,7 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2');
+    src: url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: AppleSystemUIFont, Roboto, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+    background: #1992D4;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    color: white;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.sidebar-header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 4px;
+}
+
+.logo {
+    fill: white;
+    width: 48px;
+    justify-self: center;
+}
+
+.icon {
+    fill: white;
+    width: 28px;
+    justify-self: center;
+}
+
+.navigation-menu{
+    font-size: 1.25rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 4px;
+    row-gap: 24px;
+}
+
+.navigation-menu > a{
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: #FFF;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: #E2E7F0;
 }
